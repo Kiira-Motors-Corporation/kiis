@@ -36,3 +36,112 @@
     transform: rotate(360deg);
   }
 }
+/* src/App.css or src/Dashboard.css */
+.dashboard {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); /* Responsive columns */
+  gap: 20px; /* Space between cards */
+  padding: 20px;
+  
+
+}
+
+
+/* src/Card.css */
+/* src/Card.css */
+.card {
+  background-color: #fff;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  padding: 20px;
+  text-align: center;
+  transition: transform 0.3s, box-shadow 0.3s;
+  cursor: pointer;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  display: flex; /* Flexbox for internal layout */
+  flex-direction: column; /* Stack items vertically */
+  align-items: center; /* Center content */
+  justify-content: center; /* Center content */
+  height: 150px; /* Set a uniform height */
+}
+
+.card h2 {
+  margin-top: 10px; /* Add some margin above the title */
+  font-size: 16px; /* Set a uniform font size */
+}
+
+.card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  color: #21572df0;
+}
+
+
+/* src/styles.css */
+/* App.css */
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f4f4f4;
+  margin: 0;
+  padding: 20px;
+}
+
+.App {
+  text-align: center;
+}
+
+h1 {
+  color: #333;
+}
+
+h2 {
+  color: #555;
+}
+
+input {
+  width: 300px;
+  padding: 10px;
+  margin: 10px 0;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+button {
+  padding: 10px 15px;
+  background-color: #262b27c8;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+button:hover {
+  background-color: #111a1867;
+}
+
+.error {
+  color: red;
+  margin-top: 10px;
+}
+
+p {
+  color: #333;
+}
+
+.register-link {
+  margin-top: 15px;
+  font-size: 14px;
+}
+.form-container {
+  background: white;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  width: 350px;
+  margin: 20px auto; /* Center the form on the page */
+}
+
+
